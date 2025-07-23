@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Language Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <div class="language-info">
+        <div class="info-icon">i</div>
+        <div class="info-content">
+            <p>This model detects 16 languages:</p>
+            <ul>
+            <li>English</li>
+            <li>Portuguese</li>
+            <li>French</li>
+            <li>Dutch</li>
+            <li>Spanish</li>
+            <li>Russian</li>
+            <li>Danish</li>
+            <li>Italian</li>
+            <li>Turkish</li>
+            <li>Swedish</li>
+            <li>German</li>
+            <li>Arabic</li>
+            <li>Malayalam</li>
+            <li>Kannada</li>
+            <li>Tamil</li>
+            <li>Greek</li>
+            </ul>
+        </div>
+    </div>
+    <div id="particles-js"></div>
+    <div class="container">
+        <h1>Language Detector</h1>
+        <p>Enter text below to detect its language</p>
+        
+        <div class="input-area">
+            <textarea id="text-input" placeholder="Type or paste text here (max 200 words)..." oninput="countWords()"></textarea>
+            <div id="word-count" style="text-align: right; color: #ccc; font-size: 0.8rem;">0/200 words</div>
+            <button id="detect-btn">Detect Language</button>
+        </div>
+        
+        <div class="result-area">
+            <h2>Result</h2>
+            <div id="result" class="result-box">
+                <p>Language will appear here</p>
+            </div>
+            <div id="confidence" class="confidence-box">
+                <p>Confidence score will appear here</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.18.0/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/universal-sentence-encoder@1.3.3"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
