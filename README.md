@@ -9,6 +9,8 @@ A machine learning-powered web application that detects the language of input te
 
 **Supported Languages**: English, Portuguese, French, Dutch, Spanish, Russian, Danish, Italian, Turkish, Swedish, German, Arabic, Malayalam, Kannada, Tamil, Greek
 
+<img width="700" height="836" alt="image" src="https://github.com/user-attachments/assets/de89dadb-f180-457d-9bd6-8ac9c9338972" />
+
 ## Technical Stack
 - **Backend**: Python, Flask, Scikit-learn
 - **Frontend**: HTML, CSS, JavaScript
