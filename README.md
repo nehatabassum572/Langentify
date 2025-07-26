@@ -14,7 +14,7 @@ A machine learning-powered web application that detects the language of input te
 ## Technical Stack
 - **Backend**: Python, Flask, Scikit-learn
 - **Frontend**: HTML, CSS, JavaScript
-- **Deployment**: Docker, Gunicorn
+- **Deployment**: Gunicorn, Render
 - **Model**: https://github.com/nehatabassum572/Language-Detection-using-ML
 
 ## Installation
